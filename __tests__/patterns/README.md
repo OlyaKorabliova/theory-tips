@@ -1,4 +1,4 @@
-# [Theory Tips](../..)
+# [Theory Tips](https://github.com/OlyaKorabliova/theory-tips)
 
 ## [Patterns](https://refactoring.guru/design-patterns)
 

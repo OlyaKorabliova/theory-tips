@@ -1,4 +1,4 @@
-# [Theory Tips](../..)
+# [Theory Tips](https://github.com/OlyaKorabliova/theory-tips)
 
 ## [Object](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object)
 

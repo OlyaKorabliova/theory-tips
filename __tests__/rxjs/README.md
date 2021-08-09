@@ -1,4 +1,4 @@
-# [Theory Tips](../..)
+# [Theory Tips](https://github.com/OlyaKorabliova/theory-tips)
 
 ## [RxJS](https://rxjs.dev/guide/overview)
 - [Combination operators](./combination.spec.ts)
