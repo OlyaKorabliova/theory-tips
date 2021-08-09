@@ -1,0 +1,21 @@
+# [Theory Tips](../..)
+
+## [Object](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object)
+
+
+- [assign()](./assign.spec.ts)
+- [entries()](./entries.spec.ts)
+- [freeze()](./freeze.spec.ts)
+- [getOwnPropertyDescriptor()](./getOwnPropertyDescriptor.spec.ts)
+- [getOwnPropertyDescriptors()](./getOwnPropertyDescriptors.spec.ts)
+- [getOwnPropertyNames()](./getOwnPropertyNames.spec.ts)
+- [getOwnPropertySymbols()](./getOwnPropertySymbols.spec.ts)
+- [getPrototypeOf()](./getPrototypeOf.spec.ts)
+- [is()](./is.spec.ts)
+- [isExtensible()](./isExtensible.spec.ts)
+- [isFrozen()](./isFrozen.spec.ts)
+- [isSealed()](./isSealed.spec.ts)
+- [keys()](./keys.spec.ts)
+- [preventExtensions()](./preventExtensions.spec.ts)
+- [seal()](./seal.spec.ts)
+- [setPrototypeOf()](./setPrototypeOf.spec.ts)

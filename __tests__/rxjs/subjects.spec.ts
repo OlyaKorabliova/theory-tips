@@ -84,7 +84,7 @@ test('ReplaySubject() simple subject with 2 buffered values', done => {
 });
 
 // ---- AsyncSubject () ----
-test('AsyncSubject () simple subject', done => {
+test('AsyncSubject() simple subject', done => {
     const sub = new AsyncSubject();
     const lastValue = 5;
     sub.subscribe({
