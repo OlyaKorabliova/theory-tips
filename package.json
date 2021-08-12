@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "start": "npx ts-node",
-    "test:jest": "jest --config ./jest.config.js --watch",
+    "test": "jest --config ./jest.config.js --watch",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
     "prepare": "husky install"
