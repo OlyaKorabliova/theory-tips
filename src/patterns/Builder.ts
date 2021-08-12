@@ -48,7 +48,7 @@ export class BakeryBuilder implements Builder {
     this.cookie.recipe.push(`------> Bake on ${temprature} degrees`);
   };
 
-  getCookie = (clean = false) => {
+  getCookie = (clean: boolean = false): Cookie => {
     const result = this.cookie;
     clean && this.clean();
 
