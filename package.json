@@ -3,7 +3,10 @@
   "version": "0.0.0",
   "scripts": {
     "start": "npx ts-node",
-    "test": "jest --config ./jest.config.js --watch"
+    "test:jest": "jest --config ./jest.config.js --watch",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "prepare": "husky install"
   },
   "private": true,
   "dependencies": {
@@ -17,6 +20,11 @@
   },
   "devDependencies": {
     "@types/jest": "^26.0.20",
+    "@typescript-eslint/eslint-plugin": "^4.29.1",
+    "@typescript-eslint/parser": "^4.29.1",
+    "eslint": "^7.32.0",
+    "eslint-plugin-no-loops": "^0.3.0",
+    "husky": "^7.0.0",
     "jest": "^26.6.3",
     "jest-preset-angular": "^8.3.2",
     "ts-jest": "^26.5.2",

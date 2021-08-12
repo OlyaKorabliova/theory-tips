@@ -1,4 +1,4 @@
-export function calcSquareFromSidesArray<T>(sides: number[] | T[]) {
+export function calcSquareFromSidesArray<T>(sides: number[] | T[]): number {
   if (!sides.length) {
     return 0;
   } else if (sides.length === 1 && typeof sides[0] === 'number') {
