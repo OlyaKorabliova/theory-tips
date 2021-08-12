@@ -2,7 +2,7 @@
   "name": "test-rxjs-operators",
   "version": "0.0.0",
   "scripts": {
-    "start": "cd src/patterns && npx ts-node",
+    "start": "npx ts-node",
     "test": "jest --config ./jest.config.js --watch"
   },
   "private": true,
