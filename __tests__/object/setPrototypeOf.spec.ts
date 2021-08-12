@@ -1,19 +1,19 @@
 describe('Object.setPrototypeOf()', () => {
-  let obj1 = {
+  const obj1 = {
     name: '',
     getName: function (): string {
       return this.name;
     },
   };
 
-  let obj2 = {
+  const obj2 = {
     name: '',
     sayHello: function (): string {
       return `Hello, ${this.name}`;
     },
   };
 
-  let newObj = Object.create(obj1, {
+  const newObj = Object.create(obj1, {
     name: {
       value: 'Olya',
     },
