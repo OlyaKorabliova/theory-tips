@@ -13,7 +13,7 @@ test('Object.assign() merges objects && ref of source obj is saved', () => {
 
   const expected = Object.assign(o1, o2, o3);
 
-  expect(expected).toBe(o2);
+  expect(expected).toBe(o1);
 });
 
 test('Object.assign() merges objects with same properties', () => {
