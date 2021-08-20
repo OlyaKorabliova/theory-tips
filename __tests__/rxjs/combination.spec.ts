@@ -19,7 +19,7 @@ test('concat() 2 streams', done => {
             }
         },
         complete: done
-    })
+    });
     A.next(0);
     A.next(1);
     A.complete();
@@ -47,7 +47,7 @@ test('concat() 3 streams', done => {
             }
         },
         complete: done
-    })
+    });
     A.next(0);
     C.next(11);
     A.next(1);
@@ -81,7 +81,7 @@ test('concat() one stream errors', done => {
           expect(err).toEqual('error happened');
           done();
         }
-    })
+    });
     A.next(0);
     C.next(11);
     A.next(1);
@@ -123,7 +123,7 @@ test('merge() 2 streams', done => {
     A.next(4);
     A.complete();
     B.complete();
-})
+});
 
 test('merge() one stream errors', done => {
     // A: --0-----1---------2-----3----4---|-->
@@ -146,7 +146,7 @@ test('merge() one stream errors', done => {
         expect(err).toEqual('error happened');
         done();
       }
-    })
+    });
     A.next(1);
     E.next(100);
     E.error('error happened');
@@ -154,7 +154,7 @@ test('merge() one stream errors', done => {
     A.next(3);
     A.next(4);
     A.complete();
-})
+});
 
 
 // ---- combineLatest() ----
@@ -186,7 +186,7 @@ test('combineLatest() 2 streams', done => {
   B.next("a");
   A.next(1);
   A.next(2);
-  B.next("b")
+  B.next("b");
   A.complete();
   B.complete();
 });
@@ -212,8 +212,8 @@ test('combineLatest() one stream errors', done => {
 
   B.next("a");
   E.next(10);
-  E.error('error happened')
-  B.next("b")
+  E.error('error happened');
+  B.next("b");
   B.complete();
 });
 
@@ -232,7 +232,7 @@ test('withLatestFrom() 2 streams', done => {
   ];
   const A = new BehaviorSubject(0);
   const B = new Subject();
-  const AB = A.pipe(withLatestFrom(B))
+  const AB = A.pipe(withLatestFrom(B));
   AB.subscribe({
     next: val => {
       const element = resultAB.shift();
@@ -264,7 +264,7 @@ test('withLatestFrom() one stream errors', done => {
   const A = new BehaviorSubject(0);
   const E = new Subject();
   const resultAE = [1, 'A'];
-  const AE = A.pipe(withLatestFrom(E))
+  const AE = A.pipe(withLatestFrom(E));
   AE.subscribe({
     next: val => {
       expect(val).toEqual(resultAE);
@@ -310,7 +310,7 @@ test('forkJoin() 3 streams', done => {
   C.next("y");
   C.next("w");
   A.next(2);
-  B.next("b")
+  B.next("b");
   A.next(3);
   B.next("c");
   A.next(4);
@@ -334,7 +334,7 @@ test('startWith() on number sequence', done => {
             if (element) expect(val).toEqual(element);
         },
         complete: done
-    })
+    });
 });
 
 test('startWith() chain of emissions', done => {
@@ -351,5 +351,5 @@ test('startWith() chain of emissions', done => {
             expect(val).toEqual(element);
         },
         complete: done
-    })
+    });
 });

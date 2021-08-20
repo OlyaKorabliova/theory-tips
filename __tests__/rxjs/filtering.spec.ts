@@ -12,7 +12,7 @@ test('filter() for even numbers', done => {
             if (element) expect(val).toEqual(element);
         },
         complete: done
-    })
+    });
 });
 
 test('filter() objects based on property', done => {
@@ -24,7 +24,7 @@ test('filter() objects based on property', done => {
     example.subscribe(val => {
         expect(val).toEqual({ name: 'Joe', age: 31 });
         done();
-    })
+    });
 });
 
 test('filter() for number greater than specified value', done => {
@@ -36,5 +36,5 @@ test('filter() for number greater than specified value', done => {
         if (circleCount === results.length) done();
         expect(val).toEqual(results[circleCount]);
         circleCount += 1;
-    })
+    });
 });

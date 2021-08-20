@@ -12,8 +12,8 @@ test('of() Emitting a sequence of numbers', done => {
   let number = 1;
   of(1, 2, 3, 4, 5).subscribe({
     next: val => {
-        expect(val).toBe(number)
-        number += 1
+        expect(val).toBe(number);
+        number += 1;
       },
     complete: done,
   });
@@ -30,7 +30,7 @@ test('of() Emitting an object, array, and function', done => {
   source.subscribe({
     next: val => {
       const element = test.shift();
-        if (element) expect(val).toBe(element)
+        if (element) expect(val).toBe(element);
       },
     complete: done,
   });
@@ -42,11 +42,11 @@ test('from() Observable from array', done => {
   from([2, 4, 6, 8, 10])
   .subscribe({
       next: val => {
-          expect(val).toBe(last)
-          last += 2
+          expect(val).toBe(last);
+          last += 2;
         },
       complete: done,
-  })
+  });
 });
 
 test('from() Observable from promise', done => {
@@ -54,7 +54,7 @@ test('from() Observable from promise', done => {
   .subscribe(val => {
     expect(val).toEqual('Hello World!');
     done();
-  })
+  });
 });
 
 test('from() Observable from collection', done => {
@@ -71,7 +71,7 @@ test('from() Observable from collection', done => {
         if (element) expect(val).toEqual(element);
       },
       complete: done,
-  })
+  });
 });
 
 test('from() Observable from string', done => {
@@ -85,7 +85,7 @@ test('from() Observable from string', done => {
           index += 1;
         },
       complete: done
-  })
+  });
 });
 
 // ---- empty() ----
@@ -103,5 +103,5 @@ test('empty() immediately completes', done => {
           expect(sum).toEqual(0); // sum should not change during next();
           done();
       }
-  })
+  });
 });

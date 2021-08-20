@@ -15,10 +15,10 @@ test('Object.is() truthy comparisons', () => {
     ];
 
     r.forEach(element => {
-        expect(Object.is(element[0], element[1])).toEqual(true)
+        expect(Object.is(element[0], element[1])).toEqual(true);
     });
     
-})
+});
 
 test('Object.is() falsy comparisons', () => {
     const foo = { a: 1 };
@@ -33,7 +33,7 @@ test('Object.is() falsy comparisons', () => {
     ];
 
     r.forEach(element => {
-        expect(Object.is(element[0], element[1])).toEqual(false)
+        expect(Object.is(element[0], element[1])).toEqual(false);
     });
     
-})
+});

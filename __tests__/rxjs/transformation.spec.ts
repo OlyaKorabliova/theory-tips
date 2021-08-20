@@ -12,7 +12,7 @@ test('map() Add 10 to each number', done => {
             if (element) expect(val).toEqual(element);
         },
         complete: done
-    })
+    });
 });
 
 test('map() to single property', done => {
@@ -29,7 +29,7 @@ test('map() to single property', done => {
             if (element) expect(val).toEqual(element);
         },
         complete: done
-    })
+    });
 });
 
 // ---- scan() ----
@@ -43,7 +43,7 @@ test('scan() Sum over time', done => {
             if (element) expect(val).toEqual(element);
         },
         complete: done
-    })
+    });
 });
 
 test('scan() Accumulating an object', done => {
@@ -67,5 +67,5 @@ test('scan() Accumulating an object', done => {
     subject.next({ name: 'Joe' });
     subject.next({ age: 30 });
     subject.next({ favoriteLanguage: 'JavaScript' });
-    subject.complete()
+    subject.complete();
 });

@@ -5,7 +5,7 @@ test('Object.freeze() throws error when try to change', () => {
         Object.freeze(data);
         data.a = 100;
     }).toThrow();
-})
+});
 
 test('Object.freeze() works with the top-level properties only', () => {
     const data = {
@@ -18,6 +18,6 @@ test('Object.freeze() works with the top-level properties only', () => {
 
     expect(data).toEqual({
         internal: { a: 'hello' }
-    })
+    });
 
-})
+});

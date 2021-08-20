@@ -19,6 +19,6 @@ test('tap() logging', done => {
         if (element) expect(val).toEqual(element);
       },
       complete: done
-  })
+  });
 
 });
