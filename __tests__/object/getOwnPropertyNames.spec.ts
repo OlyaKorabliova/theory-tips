@@ -18,12 +18,12 @@ test('Object.getOwnPropertyNames() of object w/ a non-enum prop', () => {
     {},
     {
       getFoo: {
-        value: function () {
+        value() {
           return this.foo;
         },
         enumerable: false,
       },
-    }
+    },
   );
 
   data.foo = 'foo';

@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-expressions */
+
 interface Builder {
   addFlour(): void;
   addWater(): void;
@@ -58,15 +60,12 @@ export class BakeryBuilder implements Builder {
 
 class Cookie {
   ingredients: string[] = [];
+
   recipe: string[] = [];
 
-  showIngredients = (): string => {
-    return `Ingredients: ${this.ingredients.join(', ')}`;
-  };
+  showIngredients = (): string => `Ingredients: ${this.ingredients.join(', ')}`;
 
-  showRecipe = (): string => {
-    return `The cookie recipe is: ${this.recipe}`;
-  };
+  showRecipe = (): string => `The cookie recipe is: ${this.recipe}`;
 }
 
 export class Chef {

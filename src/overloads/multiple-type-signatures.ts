@@ -1,7 +1,7 @@
 /*
-    PROS: 
+    PROS:
         - Easy for the caller to see different constructor overloads.
-    
+
     CONS:
         - Too much logic in constructor.
         - Type checking.
@@ -14,11 +14,17 @@ class RectangularEx1 implements Shape {
   private squareValue: number;
 
   constructor();
+
   constructor(shape: Shape);
+
   constructor(a: number);
+
   constructor(a: number, b: number);
+
   constructor(...sides: number[]);
+
   constructor(sides: number[]);
+
   constructor(aOrSquare?: Shape | number | number[], b?: number) {
     if (typeof aOrSquare === 'undefined' || aOrSquare === null) {
       this.squareValue = 0;

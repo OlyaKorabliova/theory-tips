@@ -17,13 +17,13 @@ test('Object.seal() throws error when try to add new prop', () => {
 
 test('Object.seal() cannot convert data properties to accessors', () => {
   const data = {
-    prop: function () {},
+    prop() {},
     foo: 'bar',
   };
   expect(() => {
     Object.seal(data);
     Object.defineProperty(data, 'foo', {
-      get: function () {
+      get() {
         return 'g';
       },
     });

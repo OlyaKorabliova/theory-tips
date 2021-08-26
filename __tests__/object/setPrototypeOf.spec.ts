@@ -1,14 +1,14 @@
 describe('Object.setPrototypeOf()', () => {
   const obj1 = {
     name: '',
-    getName: function (): string {
+    getName(): string {
       return this.name;
     },
   };
 
   const obj2 = {
     name: '',
-    sayHello: function (): string {
+    sayHello(): string {
       return `Hello, ${this.name}`;
     },
   };

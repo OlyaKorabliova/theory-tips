@@ -14,7 +14,6 @@ describe('Visitor', () => {
   const bank = new Bank();
 
   test('Insurance agent visits Home', () => {
-    const insuranceAgentVisitor = new InsuranceAgentVisitor();
     const result = 'Sell Medical insurance for Home';
 
     expect(home.accept(insuranceAgentVisitor)).toEqual(result);

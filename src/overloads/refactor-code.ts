@@ -1,9 +1,10 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /*
-    PROS: 
+    PROS:
         - No logic in constructor.
         - No static methods.
         - Most reusable code.
-    
+
     CONS:
         - Burden on caller to find ways for instantiation.
 */

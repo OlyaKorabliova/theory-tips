@@ -33,7 +33,7 @@ test('Object.assign() wraps primitives and ignores null w/ undefined', () => {
   const v3 = 10;
   const v4 = Symbol('foo');
 
-  const expected = { '0': 'a', '1': 'b', '2': 'c' };
+  const expected = { 0: 'a', 1: 'b', 2: 'c' };
 
   const actual = Object.assign({}, v1, null, v2, undefined, v3, v4);
 

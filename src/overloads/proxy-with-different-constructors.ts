@@ -1,8 +1,8 @@
 /*
-    PROS: 
+    PROS:
         - No logic in constructor.
         - No static methods.
-    
+
     CONS:
         - Very verbose (many proxy classes).
         - Hard to discover variations.
@@ -76,8 +76,6 @@ class WithSidesArray implements Shape {
 }
 
 class WithNoParams implements Shape {
-  constructor() {}
-
   square(): number {
     return 0;
   }

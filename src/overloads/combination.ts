@@ -1,7 +1,7 @@
 /*
-    PROS: 
+    PROS:
         - No logic in constructor.
-    
+
     CONS:
         - Use of static methods.
         - Small burden on caller to discover static methods and to transform input.

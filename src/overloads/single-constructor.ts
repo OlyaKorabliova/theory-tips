@@ -1,9 +1,9 @@
 /*
-    PROS: 
+    PROS:
         - No logic in constructor.
         - No static methods.
         - Smallest implementation.
-    
+
     CONS:
         - Burden on the caller to transform constructor input.
         - Duplicated code for argument transformation (e.g. repeat same code
