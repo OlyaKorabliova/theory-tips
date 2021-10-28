@@ -1,22 +1,22 @@
 module.exports = {
   env: {
     es2021: true,
-    node: true
+    node: true,
   },
   extends: [
     'airbnb-base',
     'eslint:recommended',
     'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended'
+    'plugin:@typescript-eslint/recommended',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 12,
-    sourceType: 'module'
+    sourceType: 'module',
   },
   plugins: [
     '@typescript-eslint',
-    'no-loops'
+    'no-loops',
   ],
   rules: {
     semi: ['error', 'always'],
@@ -25,22 +25,22 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': ['error'],
     '@typescript-eslint/no-empty-function': ['off'],
     'no-unused-vars': 'off',
-    'no-useless-constructor': 'off',
     'no-empty-function': 'off',
     'no-loops/no-loops': 'error',
     'no-multi-spaces': ['error'],
     'no-else-return': ['error'],
     'no-use-before-define': [1, { functions: true, classes: true }],
     'no-unused-expressions': [1, {
-      allowShortCircuit: true, allowTernary: true, allowTaggedTemplates: true, enforceForJSX: true
+      allowShortCircuit: true, allowTernary: true, allowTaggedTemplates: true, enforceForJSX: true,
     }],
-    'arrow-body-style': ['error', 'never'],
+    'arrow-body-style': ['off'],
     'max-classes-per-file': ['off'],
-    'linebreak-style': 0,
+    'linebreak-style': ['off'],
     'class-methods-use-this': ['off'],
     'import/prefer-default-export': 'off',
     'prefer-object-spread': 'off',
     'comma-dangle': ['off', 'never'],
+    'no-useless-constructor': 0,
     'import/extensions': [
       'error',
       'ignorePackages',
@@ -48,15 +48,15 @@ module.exports = {
         js: 'never',
         jsx: 'never',
         ts: 'never',
-        tsx: 'never'
-      }
-    ]
+        tsx: 'never',
+      },
+    ],
   },
   settings: {
     'import/resolver': {
       node: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx']
-      }
-    }
-  }
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
+    },
+  },
 };
