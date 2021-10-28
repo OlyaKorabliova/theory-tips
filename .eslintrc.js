@@ -1,22 +1,22 @@
 module.exports = {
   env: {
     es2021: true,
-    node: true
+    node: true,
   },
   extends: [
     'airbnb-base',
     'eslint:recommended',
     'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended'
+    'plugin:@typescript-eslint/recommended',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 12,
-    sourceType: 'module'
+    sourceType: 'module',
   },
   plugins: [
     '@typescript-eslint',
-    'no-loops'
+    'no-loops',
   ],
   rules: {
     semi: ['error', 'always'],
@@ -34,9 +34,11 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'prefer-object-spread': 'off',
     'no-unused-expressions': [1, {
-      allowShortCircuit: true, allowTernary: true, allowTaggedTemplates: true, enforceForJSX: true
+      allowShortCircuit: true, allowTernary: true, allowTaggedTemplates: true, enforceForJSX: true,
     }],
+    'linebreak-style': ['off'],
     'comma-dangle': ['off', 'never'],
+    'no-useless-constructor': 0,
     'import/extensions': [
       'error',
       'ignorePackages',
@@ -44,15 +46,15 @@ module.exports = {
         js: 'never',
         jsx: 'never',
         ts: 'never',
-        tsx: 'never'
-      }
-    ]
+        tsx: 'never',
+      },
+    ],
   },
   settings: {
     'import/resolver': {
       node: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx']
-      }
-    }
-  }
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
+    },
+  },
 };
