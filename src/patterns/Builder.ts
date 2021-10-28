@@ -33,7 +33,7 @@ export class BakeryBuilder implements Builder {
     this.updateRecipe('water');
   };
 
-  addSugar =  (): void => {
+  addSugar = (): void => {
     this.updateRecipe('sugar');
   };
 
