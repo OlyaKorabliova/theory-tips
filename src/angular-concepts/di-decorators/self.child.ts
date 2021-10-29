@@ -2,6 +2,7 @@ import { Component, Self } from '@angular/core';
 import { ToysService } from './toys.service';
 
 @Component({
+  template: '',
   providers: [ToysService],
 })
 export class SelfChildComponent {
