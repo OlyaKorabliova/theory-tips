@@ -2,6 +2,7 @@ import { Component, Optional } from '@angular/core';
 import { ToysService } from './toys.service';
 
 @Component({
+  template: '',
   providers: [],
 })
 export class OptionalChildComponent {
